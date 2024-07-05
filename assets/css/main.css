@@ -1,0 +1,142 @@
+/* assets/main.css */
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+.input-field-label {
+  color: var(--color-light-text50);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Example of using other colors */
+.some-class {
+  background-color: var(--color-light-background1);
+  color: var(--color-light-text100);
+}
+
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-black {
+  color: var(--color-black);
+}
+
+.color-success {
+  color: var(--color-success);
+}
+
+.color-danger {
+  color: var(--color-danger);
+}
+
+.color-warning {
+  color: var(--color-warning);
+}
+
+.color-star {
+  color: var(--color-star);
+}
+
+.color-heart {
+  color: var(--color-heart);
+}
+
+.color-light-background1 {
+  background-color: var(--color-light-background1);
+}
+
+.color-light-background2 {
+  background-color: var(--color-light-background2);
+}
+
+.color-light-background3 {
+  background-color: var(--color-light-background3);
+}
+
+.color-light-button-transparent {
+  background-color: var(--color-light-button-transparent);
+}
+
+.color-light-neutral {
+  color: var(--color-light-neutral);
+}
+
+.color-light-gray {
+  color: var(--color-light-gray);
+}
+
+.color-light-text-highlight {
+  color: var(--color-light-text-highlight);
+}
+
+.color-light-text100 {
+  color: var(--color-light-text100);
+}
+
+.color-light-text50 {
+  color: var(--color-light-text50);
+}
+
+.color-light-text30 {
+  color: var(--color-light-text30);
+}
+
+.color-light-text10 {
+  color: var(--color-light-text10);
+}
+
+.color-light-primary {
+  color: var(--color-light-primary);
+}
+
+.color-light-pink {
+  color: var(--color-light-pink);
+}
+
+.color-light-blue-deep {
+  color: var(--color-light-blue-deep);
+}
+
+.color-light-blue-dark {
+  color: var(--color-light-blue-dark);
+}
+
+.color-light-blue {
+  color: var(--color-light-blue);
+}
+
+.color-light-purple {
+  color: var(--color-light-purple);
+}
+
+.color-light-green-dark {
+  color: var(--color-light-green-dark);
+}
+
+.color-light-green {
+  color: var(--color-light-green);
+}
+
+.color-light-green-light {
+  color: var(--color-light-green-light);
+}
+
+.color-light-yellow {
+  color: var(--color-light-yellow);
+}
+
+.color-light-red {
+  color: var(--color-light-red);
+}
