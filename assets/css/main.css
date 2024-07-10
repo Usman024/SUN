@@ -2,7 +2,7 @@
 body {
   font-family: "Nunito", sans-serif;
 }
-
+p,
 h1,
 h2,
 h3,
@@ -18,125 +18,128 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
-/* Example of using other colors */
 .some-class {
   background-color: var(--color-light-background1);
   color: var(--color-light-text100);
 }
 
-
-.color-white {
-  color: var(--color-white);
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.element::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
 }
 
-.color-black {
-  color: var(--color-black);
+::-webkit-scrollbar-thumb {
+  background: transparent;
 }
 
-.color-success {
-  color: var(--color-success);
+*:-webkit-scrollbar {
+  display: none !important;
 }
 
-.color-danger {
-  color: var(--color-danger);
-}
-
-.color-warning {
-  color: var(--color-warning);
-}
-
-.color-star {
-  color: var(--color-star);
-}
-
-.color-heart {
-  color: var(--color-heart);
-}
-
-.color-light-background1 {
+.bg-light-1 {
   background-color: var(--color-light-background1);
 }
 
-.color-light-background2 {
+.bg-light-2 {
   background-color: var(--color-light-background2);
 }
 
-.color-light-background3 {
+.bg-light-3 {
   background-color: var(--color-light-background3);
 }
+.bg-primary {
+  background-color: var(--color-light-primary);
+}
 
-.color-light-button-transparent {
+.bg-light-btn-transparent {
   background-color: var(--color-light-button-transparent);
-}
-
-.color-light-neutral {
-  color: var(--color-light-neutral);
-}
-
-.color-light-gray {
-  color: var(--color-light-gray);
-}
-
-.color-light-text-highlight {
-  color: var(--color-light-text-highlight);
-}
-
-.color-light-text100 {
   color: var(--color-light-text100);
 }
 
-.color-light-text50 {
+.txt-light-neutral {
+  color: var(--color-light-neutral);
+}
+
+.txt-light-gray {
+  color: var(--color-light-gray);
+}
+
+.txt-light-highlight {
+  color: var(--color-light-text-highlight);
+}
+
+.txt-light-100 {
+  color: var(--color-light-text100);
+}
+
+.txt-light-50 {
   color: var(--color-light-text50);
 }
 
-.color-light-text30 {
+.txt-light-30 {
   color: var(--color-light-text30);
 }
 
-.color-light-text10 {
+.txt-light-10 {
   color: var(--color-light-text10);
 }
 
-.color-light-primary {
+.txt-light-primary {
   color: var(--color-light-primary);
 }
 
-.color-light-pink {
+.txt-light-pink {
   color: var(--color-light-pink);
 }
 
-.color-light-blue-deep {
+.txt-light-blue-deep {
   color: var(--color-light-blue-deep);
 }
 
-.color-light-blue-dark {
+.txt-light-blue-dark {
   color: var(--color-light-blue-dark);
 }
 
-.color-light-blue {
+.txt-light-blue {
   color: var(--color-light-blue);
 }
 
-.color-light-purple {
+.txt-light-purple {
   color: var(--color-light-purple);
 }
 
-.color-light-green-dark {
+.txt-light-green-dark {
   color: var(--color-light-green-dark);
 }
 
-.color-light-green {
+.txt-light-green {
   color: var(--color-light-green);
 }
 
-.color-light-green-light {
+.txt-light-green-light {
   color: var(--color-light-green-light);
 }
 
-.color-light-yellow {
+.txt-light-yellow {
   color: var(--color-light-yellow);
 }
 
-.color-light-red {
+.txt-light-red {
   color: var(--color-light-red);
+}
+
+.txt-subTitle {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+.txt-title {
+  font-size: 28px;
+  font-weight: 600;
 }

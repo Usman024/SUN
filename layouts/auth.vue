@@ -2,14 +2,16 @@
 
 <template>
   <div class="layout-container">
-    <aside class="sidebar w-25">
+    <aside class="sidebar custom-sidebar-width">
       <div class="d-flex justify-center mt-16">
         <SvgsLogo />
       </div>
 
       <slot></slot>
     </aside>
-    <main class="main-content w-75">
+    <main
+      class="main-content custom-main-content-width d-none d-md-flex justify-center align-center bg-light-2 overflow-y-auto"
+    >
       <SvgsAuthSvgImage />
     </main>
   </div>
@@ -22,15 +24,27 @@
   overflow: hidden;
 }
 .sidebar {
-  background-color: #ffffff;
   padding: 1.4rem;
 }
-.main-content {
-  background-color: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  overflow-y: auto;
+.custom-sidebar-width {
+  width: 25%;
+}
+
+.custom-main-content-width {
+  width: 75%;
+}
+
+@media (max-width: 960px) {
+  .layout-container {
+    flex-direction: column;
+  }
+
+  .custom-sidebar-width {
+    width: 100%;
+  }
+
+  .custom-main-content-width {
+    display: none;
+  }
 }
 </style>
