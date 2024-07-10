@@ -5,7 +5,41 @@ import Colors from "~/constants/Colors";
 <template>
   <div class="container bg-white rounded-lg pa-10">
     <v-row class="justify-lg-space-between align-center">
-      <p class="txt-light-100 txt-subTitle">Analytics</p>
+      <v-row class="items-center ga-2">
+        <p class="txt-light-100 txt-subTitle">Analytics</p>
+
+        <v-btn
+          class="text-none mt-1"
+          :color="Colors.light.background4"
+          rounded="xs"
+          size="small"
+          variant="flat"
+        >
+          Start Date
+
+          <template v-slot:append>
+            <v-icon>
+              <SvgsDashboardChevronDownIcon />
+            </v-icon>
+          </template>
+        </v-btn>
+
+        <v-btn
+          class="text-none mt-1"
+          :color="Colors.light.background4"
+          rounded="xs"
+          size="small"
+          variant="flat"
+        >
+          End Date
+
+          <template v-slot:append>
+            <v-icon>
+              <SvgsDashboardChevronDownIcon />
+            </v-icon>
+          </template>
+        </v-btn>
+      </v-row>
 
       <v-btn
         class="text-none"

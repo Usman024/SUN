@@ -11,7 +11,7 @@ export default {
     background1: "#fff",
     background2: "#fafafa",
     background3: "#f7f7f8",
-    background31: "#EAEAEA",
+    background4: "#fafafb",
     buttonTransparent: "#FFFFFF4D",
     neutral: "#969696",
     gray: "#ACACAC",

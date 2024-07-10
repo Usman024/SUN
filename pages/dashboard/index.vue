@@ -54,7 +54,7 @@ const cardData = [
 
 
 
-    <v-row class="mt-10">
+    <v-row class="mt-10 mb-16">
       <v-col cols="12" md="8">
         <DashboardSubscriptionStats class="w-100" />
       </v-col>

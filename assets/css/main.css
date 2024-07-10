@@ -52,6 +52,9 @@ h6 {
 .bg-light-3 {
   background-color: var(--color-light-background3);
 }
+.bg-light-4 {
+  background-color: var(--color-light-background4);
+}
 .bg-primary {
   background-color: var(--color-light-primary);
 }
@@ -137,7 +140,6 @@ h6 {
   font-size: 22px;
   font-weight: 600;
 }
-
 
 .txt-title {
   font-size: 28px;
