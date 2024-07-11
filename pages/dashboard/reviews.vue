@@ -6,5 +6,10 @@ definePageMeta({
 
 
 <template>
-    <p class="text-h3 text-center">Reviews </p>
+  <section class="w-100 h-100 bg-light-2 pt-7 px-10">
+    <DashboardHeader :title="'Reviews'" />
+ 
+     
+  
+  </section>
 </template>

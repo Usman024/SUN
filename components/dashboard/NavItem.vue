@@ -31,6 +31,7 @@ const selectItem = () => {
     class="hover-list-item pl-6 my-1"
     :class="{ 'selected-list-item': isSelected }"
     @click="selectItem"
+    :active='false'
   >
     <template v-slot:prepend>
       <v-icon :class="{ 'selected-icon': isSelected }">

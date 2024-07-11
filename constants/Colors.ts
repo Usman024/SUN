@@ -15,7 +15,7 @@ export default {
     buttonTransparent: "#FFFFFF4D",
     neutral: "#969696",
     gray: "#ACACAC",
-    textHighlight: "#9B9CB8",
+    textHighlight: "#f0eef8",
     
     text100: "#000000",
     text50: "#818094",
@@ -30,7 +30,7 @@ export default {
     greenDark: "#0A3A17",
     green: "#A7E84B",
     greenLight: "#C6FD55",
-    yellow: "#FFD600",
+    yellow: "#ffd66b",
     red: "#E87A6D",
   },
 };

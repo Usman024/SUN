@@ -137,11 +137,20 @@ h6 {
 }
 
 .txt-subTitle {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
 }
 
 .txt-title {
   font-size: 28px;
   font-weight: 600;
+}
+
+.txt-subTitle2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.txt-info {
+  font-size: 18px;
 }

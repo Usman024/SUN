@@ -43,7 +43,8 @@ const Login = () => {
       <v-select
         :items="USERS"
         v-model="selectedUser"
-        variant="solo"
+        variant="flat"
+        rounded="lg"
         placeholder="Admin"
         :bg-color="colors.light.background3"
       ></v-select>
@@ -56,7 +57,8 @@ const Login = () => {
         id="email"
         :bg-color="colors.light.background3"
         placeholder="example@gmail.com"
-        variant="solo"
+        variant="flat"
+        rounded="lg"
         type="email"
         required
       ></v-text-field>
@@ -71,7 +73,8 @@ const Login = () => {
         id="password"
         :bg-color="colors.light.background3"
         placeholder="Enter your password"
-        variant="solo"
+        variant="flat"
+        rounded="lg"
         type="password"
         required
         @click:append-inner="visible = !visible"

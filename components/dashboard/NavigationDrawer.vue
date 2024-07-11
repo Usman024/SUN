@@ -111,7 +111,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <v-navigation-drawer class="color-white" theme="light" :width="300">
+  <v-navigation-drawer
+    class="color-white"
+    border="none"
+    theme="light"
+    :width="300"
+  >
     <div class="d-flex justify-center mt-10 mb-12">
       <SvgsLogo />
     </div>
@@ -144,6 +149,4 @@ onMounted(() => {
   </v-navigation-drawer>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

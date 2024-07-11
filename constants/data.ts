@@ -102,3 +102,28 @@ export const TABLEDATA = [
     country: "Netherlands",
   },
 ];
+
+
+
+export const TUTORS_STATS_DATA = [
+  {
+    prependAvatar: "https://cdn.vuetifyjs.com/images/lists/1.jpg",
+    title: "Brunch this weekend?",
+  },
+  {
+    prependAvatar: "https://cdn.vuetifyjs.com/images/lists/2.jpg",
+    title: "Summer BBQ",
+  },
+  {
+    prependAvatar: "https://cdn.vuetifyjs.com/images/lists/3.jpg",
+    title: "Oui oui",
+  },
+  {
+    prependAvatar: "https://cdn.vuetifyjs.com/images/lists/4.jpg",
+    title: "Birthday gift",
+  },
+  {
+    prependAvatar: "https://cdn.vuetifyjs.com/images/lists/5.jpg",
+    title: "Recipe to try",
+  },
+];
