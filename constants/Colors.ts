@@ -4,7 +4,7 @@ export default {
   success: "#75D00F",
   danger: "#F33950",
   warning: "#FFB70A",
-  star: "#FDCF2B",
+  star: "#ffa025",
   heart: "#bd0000",
 
   light: {
@@ -18,6 +18,7 @@ export default {
     textHighlight: "#f0eef8",
     
     text100: "#000000",
+    text90: '#030229',
     text50: "#818094",
     text30: "#4d4d4d",
     text10: "#333333",

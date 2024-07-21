@@ -30,7 +30,7 @@ const cardData = [
 </script>
 
 <template>
-  <section class="w-100 h-100 bg-light-2 pt-7 px-10">
+  <section class="w-100 h-100 pt-7 px-10">
     <DashboardHeader :title="'Dashboard'" />
 
     <div class="d-flex justify-space-between mt-16 items-center ga-10">

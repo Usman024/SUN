@@ -6,7 +6,7 @@ definePageMeta({
 
 <template>
   
-  <section class="w-100 h-100 bg-light-2 pt-7 px-10">
+  <section class="w-100 h-100  pt-7 px-10">
     <DashboardHeader :title="'Subscription'" />
   </section>
 </template>
