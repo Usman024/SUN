@@ -2,10 +2,43 @@
 import { USERS_HEADER } from "~/constants/data";
 import Colors from "~/constants/Colors";
 import type { User } from "~/types/user";
+import type { MenuItem } from "~/types/dashboard";
+import EditIcon from "@/components/svgs/dashboard/EditIcon.vue";
+import DeleteIcon from "@/components/svgs/dashboard/DeleteIcon.vue";
+
 
 const props = defineProps<{
   users: User[];
 }>();
+
+
+const editAction = () => {
+  console.log('Edit action triggered');
+};
+
+const deleteAction = () => {
+  console.log('Delete action triggered');
+};
+
+
+const menuOptions: MenuItem[] = [
+  {
+    color: '#f7faff',
+    text: 'Edit',
+    icon: EditIcon,
+    action: editAction
+  },
+  {
+    color: '#fef4f5',
+    text: 'Delete',
+    icon: DeleteIcon,
+    action: deleteAction
+
+  },
+  
+];
+
+
 </script>
 
 <template>
@@ -55,7 +88,7 @@ const props = defineProps<{
             </v-btn>
           </div>
 
-          <DashboardMenuListItem />
+          <DashboardMenuListItem :menuItems="menuOptions" />
         </v-row>
       </div>
     </div>

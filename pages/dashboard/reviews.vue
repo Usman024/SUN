@@ -8,7 +8,7 @@ definePageMeta({
 </script>
 
 <template>
-  <section class="w-100 h-100 pt-7 px-10">
+  <section class="w-100 h-100 pt-7 px-10 bg-light-3">
     <DashboardHeader :title="'Reviews'" />
 
     <DashboardReviewsCard  :reviews="REVIEWS_DATA" />

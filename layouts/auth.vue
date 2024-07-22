@@ -10,7 +10,7 @@
       <slot></slot>
     </aside>
     <main
-      class="main-content custom-main-content-width d-none d-md-flex justify-center align-center bg-light-2 overflow-y-auto"
+      class="main-content custom-main-content-width d-none d-md-flex justify-center align-center bg-light-3 overflow-y-auto"
     >
       <SvgsAuthSvgImage />
     </main>

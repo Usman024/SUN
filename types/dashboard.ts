@@ -8,3 +8,12 @@ export type NavigationItem = {
     link: string;
   }[];
 };
+
+
+
+export type MenuItem = {
+  color: string;
+  text: string;
+  icon: any; 
+  action: () => void;
+}
