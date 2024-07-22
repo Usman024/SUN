@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import Colors from "~/constants/Colors";
 import type { Reviews } from "~/types/review";
-
 import type { MenuItem } from "~/types/dashboard";
+
 import ShareIcon from "@/components/svgs/dashboard/ShareIcon.vue";
 import PinIcon from "@/components/svgs/dashboard/PinIcon.vue";
 import DeleteIcon from "@/components/svgs/dashboard/DeleteIcon.vue";
