@@ -11,6 +11,8 @@ const props = defineProps<{
   reviews: Reviews[];
 }>();
 
+const reviews = ref([...props.reviews]);
+
 const shareAction = () => {
   console.log("Response action triggered");
 };
@@ -20,13 +22,14 @@ const pinAction = () => {
 };
 
 
-const deleteAction = () => {
-  console.log("Delete action triggered");
+const deleteAction = (index: number) => {
+  reviews.value.splice(index, 1);
+  console.log("Delete action triggered, item removed at index:", index);
 };
 
  
 
-const menuOptions: MenuItem[] = [
+const menuOptions = (index: number): MenuItem[] => [
   {
     color: "#f8f7ff",
     text: "Response",
@@ -43,7 +46,7 @@ const menuOptions: MenuItem[] = [
     color: "#fef4f5",
     text: "Delete",
     icon: DeleteIcon,
-    action: deleteAction,
+    action: () => deleteAction(index),
   },
 ];
 </script>
@@ -68,10 +71,10 @@ const menuOptions: MenuItem[] = [
               ></v-rating>
             </div>
 
-            <DashboardMenuListItem :menuItems="menuOptions" />
+            <DashboardMenuListItem :menuItems="menuOptions(index)" />
           </div>
 
-          <div class="px-4 pb-4">
+          <div class="px-4 pb-4 card-content">
             {{ item.text }}
           </div>
         </div>
@@ -80,4 +83,10 @@ const menuOptions: MenuItem[] = [
   </div>
 </template>
 
-<style></style>
+<style scoped>
+.card-content {
+  margin-top: -10px;;
+  max-width: 88%
+}
+
+</style>

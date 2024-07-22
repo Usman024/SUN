@@ -11,17 +11,20 @@ const props = defineProps<{
   users: User[];
 }>();
 
+const users = ref([...props.users]);
+
 
 const editAction = () => {
   console.log('Edit action triggered');
 };
 
-const deleteAction = () => {
-  console.log('Delete action triggered');
+const deleteAction = (index: number) => {
+  users.value.splice(index, 1);
+  console.log('Delete action triggered', index);
 };
 
 
-const menuOptions: MenuItem[] = [
+const menuOptions = (index: number)  : MenuItem[] => [
   {
     color: '#f7faff',
     text: 'Edit',
@@ -32,7 +35,7 @@ const menuOptions: MenuItem[] = [
     color: '#fef4f5',
     text: 'Delete',
     icon: DeleteIcon,
-    action: deleteAction
+    action: () => deleteAction(index)
 
   },
   
@@ -88,7 +91,7 @@ const menuOptions: MenuItem[] = [
             </v-btn>
           </div>
 
-          <DashboardMenuListItem :menuItems="menuOptions" />
+          <DashboardMenuListItem :menuItems="menuOptions(index)" />
         </v-row>
       </div>
     </div>
