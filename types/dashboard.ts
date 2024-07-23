@@ -14,6 +14,7 @@ export type NavigationItem = {
 export type MenuItem = {
   color: string;
   text: string;
+  textColor: string,
   icon: any; 
   action: () => void;
 }

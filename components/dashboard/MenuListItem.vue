@@ -27,11 +27,12 @@ const props = defineProps<{
                 class="w-100 justify-start text-none"
                 rounded="lg"
                 @click="item.action"
+                :style="{ color: item.textColor }"
               >
                 <v-icon left>
                   <component :is="item.icon" />
                 </v-icon>
-                <span class="pl-2" >
+                <span class="pl-2"  >
                   {{ item.text }}
                 </span>
               </v-btn>

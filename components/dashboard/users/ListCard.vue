@@ -6,49 +6,45 @@ import type { MenuItem } from "~/types/dashboard";
 import EditIcon from "@/components/svgs/dashboard/EditIcon.vue";
 import DeleteIcon from "@/components/svgs/dashboard/DeleteIcon.vue";
 
-
 const props = defineProps<{
   users: User[];
 }>();
 
 const users = ref([...props.users]);
 
-
 const editAction = () => {
-  console.log('Edit action triggered');
+  console.log("Edit action triggered");
 };
 
 const deleteAction = (index: number) => {
   users.value.splice(index, 1);
-  console.log('Delete action triggered', index);
+  console.log("Delete action triggered", index);
 };
 
-
-const menuOptions = (index: number)  : MenuItem[] => [
+const menuOptions = (index: number): MenuItem[] => [
   {
-    color: '#f7faff',
-    text: 'Edit',
+    color: "#f7faff",
+    textColor: Colors.light.blue,
+    text: "Edit",
     icon: EditIcon,
-    action: editAction
+    action: editAction,
   },
   {
-    color: '#fef4f5',
-    text: 'Delete',
+    color: "#fef4f5",
+    textColor: Colors.danger,
+    text: "Delete",
     icon: DeleteIcon,
-    action: () => deleteAction(index)
+    action: () => deleteAction(index),
 
   },
-  
 ];
-
-
 </script>
 
 <template>
   <div class="w-full mt-10">
     <div class="d-flex justify-space-around mx-4">
       <div v-for="(item, i) in USERS_HEADER" :key="i" class="py-7">
-        <v-row class="ga-3  user-cell" align="center">
+        <v-row class="ga-3 user-cell" align="center">
           <p class="align-center">{{ item.title }}</p>
           <v-icon v-if="item.isChevronIcon" class="mb-1">
             <SvgsDashboardChevronDownIcon
@@ -67,7 +63,7 @@ const menuOptions = (index: number)  : MenuItem[] => [
       <div
         v-for="(item, index) in users"
         :key="index"
-        class="bg-white rounded-lg mt-4 py-7 px-9"
+        class="bg-white mt-4 py-7 px-9 card"
       >
         <v-row class="justify-space-between" align="center">
           <div class="d-flex ga-3 align-center user-cell">
@@ -87,7 +83,9 @@ const menuOptions = (index: number)  : MenuItem[] => [
               rounded="xl"
               variant="flat"
             >
-              {{ item.role }}
+              <p class="txt-light-blue">
+                {{ item.role }}
+              </p>
             </v-btn>
           </div>
 
@@ -102,5 +100,14 @@ const menuOptions = (index: number)  : MenuItem[] => [
 .user-cell {
   width: 200px;
   text-align: center;
+}
+
+.card {
+  transition: box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  box-shadow: 1px 17px 50px 0 rgba(0, 0, 0, 0.1);
 }
 </style>

@@ -33,18 +33,21 @@ const menuOptions = (index: number): MenuItem[] => [
   {
     color: "#f8f7ff",
     text: "Response",
+    textColor: Colors.light.blueDark,
     icon: ShareIcon,
     action: shareAction,
   },
   {
     color: "#f7faff",
     text: "Pin",
+    textColor: Colors.light.blue,
     icon: PinIcon,
     action: pinAction,
   },
   {
     color: "#fef4f5",
     text: "Delete",
+    textColor: Colors.danger,
     icon: DeleteIcon,
     action: () => deleteAction(index),
   },
