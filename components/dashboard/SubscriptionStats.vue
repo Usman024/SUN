@@ -1,12 +1,15 @@
 <script lang="ts" setup>
 import Colors from "~/constants/Colors";
 import { HEADER, TABLEDATA } from "~/constants/data";
+const props = defineProps({
+  title: String
+});
 </script>
 
 <template>
   <div class="bg-white rounded-lg pa-10">
     <v-row class="justify-lg-space-between align-center">
-      <p class="txt-light-100 txt-subTitle">Recent Subscriptions</p>
+      <p class="txt-light-100 txt-subTitle">{{ title }}</p>
 
       <v-btn
         class="text-none"

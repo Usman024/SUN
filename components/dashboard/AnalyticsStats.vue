@@ -1,6 +1,50 @@
 <script lang="ts" setup>
 import Colors from "~/constants/Colors";
+import { ref, onMounted } from 'vue';
+import Chart from 'chart.js/auto';
+import type { ChartConfiguration } from 'chart.js';
+
+const chartCanvas = ref<HTMLCanvasElement | null>(null);
+
+const data = {
+  labels: ["New Subscribers" , "New Users" , "Total Users"],
+  datasets: [
+    {
+      label: 'Sales',
+      data: [40, 20, 10],
+      backgroundColor: [
+        Colors.light.blue,
+        '#f6ba17',
+        '#9c4e9d',
+      ],
+    },
+  ],
+};
+
+const config: ChartConfiguration<'doughnut', number[], string> = {
+  type: 'doughnut',
+  data: data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+      },
+    
+    },
+  },
+};
+
+onMounted(() => {
+  if (chartCanvas.value) {
+    const ctx = chartCanvas.value.getContext('2d');
+    if (ctx) {
+      new Chart(ctx, config);
+    }
+  }
+});
 </script>
+
 
 <template>
   <div class="container bg-white rounded-lg pa-10">
@@ -50,11 +94,16 @@ import Colors from "~/constants/Colors";
         View All
       </v-btn>
     </v-row>
+
+    <div class="d-flex justify-center align-center h-100 mt-6 px-16 ">
+
+      <canvas ref="chartCanvas"></canvas>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .container {
-  height: 410px;
+  height: 410px
 }
 </style>

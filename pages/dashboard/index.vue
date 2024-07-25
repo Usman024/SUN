@@ -8,22 +8,22 @@ definePageMeta({
 const cardData = [
   {
     title: "New Users",
-    statsNumber: 245,
+    statsNumber: '245',
     icon: SvgsIconsUserIcon,
   },
   {
     title: "Active Users",
-    statsNumber: 123,
+    statsNumber: '123',
     icon: SvgsIconsReviewIcon,
   },
   {
     title: "Total Users",
-    statsNumber: 56,
+    statsNumber: '56',
     icon: SvgsIconsUserIcon,
   },
   {
     title: "Inactive Users",
-    statsNumber: 500,
+    statsNumber: '500',
     icon: SvgsIconsUserIcon,
   },
 ];
@@ -56,7 +56,7 @@ const cardData = [
 
     <v-row class="mt-10 mb-16">
       <v-col cols="12" md="8">
-        <DashboardSubscriptionStats class="w-100" />
+        <DashboardSubscriptionStats class="w-100" :title="'Recent Subscriptions'" />
       </v-col>
       <v-col cols="12" md="4">
         <DashboardTutorsStats class="w-100 ml-md-3 ml-0" />

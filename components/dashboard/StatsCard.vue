@@ -4,7 +4,7 @@ import Colors from "~/constants/Colors";
 
 const props = defineProps({
   icon: Object,
-  statsNumber: Number,
+  statsNumber: String,
   statsTitle: String,
 });
 </script>
